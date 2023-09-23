@@ -1,0 +1,122 @@
+nav ul a,
+nav .brand-logo {
+    color: #444;
+}
+
+p {
+    line-height: 2rem;
+}
+
+.parallax-container {
+    min-height: 380px;
+    line-height: 0;
+    height: auto;
+    color: rgba(255, 255, 255, 0.9);
+}
+.parallax-container .section {
+    width: 100%;
+}
+
+@media only screen and (max-width: 992px) {
+    .parallax-container .section {
+        position: absolute;
+        top: 40%;
+    }
+    #index-banner .section {
+        top: 10%;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    #index-banner .section {
+        top: 0;
+    }
+}
+
+.icon-block {
+    padding: 0 15px;
+}
+.icon-block .material-icons {
+    font-size: inherit;
+}
+
+footer.page-footer {
+    margin: 0;
+}
+
+.logo-cursor {
+    cursor: pointer;
+}
+
+.sidenav-trigger {
+    font-size: 2rem;
+    color: #444;
+    cursor: pointer;
+}
+
+@media only screen and (min-width: 993px) {
+    .sidenav-trigger {
+        display: none;
+    }
+}
+
+.txt {
+    color: #444;
+}
+
+.my-header {
+    margin: 10px;
+}
+
+.my-header5 {
+    margin: 10px 0 20px 0;
+}
+
+.my-header3 {
+    margin: 10px 0 10px 0;
+}
+
+.text-p {
+    color: #444;
+    font-size: 140%;
+    margin: 1px;
+}
+
+footer.page-footer {
+    padding: 0;
+    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14),
+        0 3px 1px -2px rgba(0, 0, 0, 0.12), 0 1px 15px 0 rgba(0, 0, 0, 0.2);
+}
+
+.div-logo {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.image {
+    height: 56px;
+    width: auto;
+    margin: 0;
+    flex-grow: 1;
+}
+
+.div-logo-inline {
+    flex-grow: 1;
+}
+
+@media only screen and (max-width: 400px) {
+    .my-header {
+        font-size: 30px;
+    }
+    #index-banner .section {
+        top: 10%;
+    }
+}
+
+@media only screen and (min-width: 601px) {
+    .image {
+        height: 64px;
+    }
+}
