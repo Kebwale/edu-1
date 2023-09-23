@@ -51,8 +51,8 @@ function App() {
                         }}
                     >
                         <Routes>
-                            <Route path="/" element={<MainPage />} />
-                            <Route path="/matomo" element={<Matomo />} />
+                            <Route path="/edu-1/" element={<MainPage />} />
+                            <Route path="/edu-1/matomo" element={<Matomo />} />
                             {/* <Route path="/contact" element={<Contact />} /> */}
                         </Routes>
                     </main>

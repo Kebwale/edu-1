@@ -69,7 +69,7 @@ function Navbar() {
                     </div>
                     <NavbarLink
                         name="Главная"
-                        route="/"
+                        route="/edu-1/"
                         setIsVisible={setIsVisible}
                     />
                 </ul>
@@ -85,7 +85,7 @@ function Navbar() {
                 >
                     <NavbarLink
                         name="Главная"
-                        route="/"
+                        route="/edu-1/"
                         setIsVisible={setIsVisible}
                     />
                     <div
@@ -104,7 +104,7 @@ function Navbar() {
 
                     <NavbarLink
                         name="Matomo"
-                        route="/matomo"
+                        route="/edu-1/matomo"
                         setIsVisible={setIsVisible}
                     />
                 </ul>

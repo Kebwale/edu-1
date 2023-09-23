@@ -4,7 +4,7 @@ function MainPage() {
     const navigate = useNavigate();
 
     const goToMatomo = () => {
-        navigate("/matomo");
+        navigate("/edu-1/matomo");
     };
 
     return (
