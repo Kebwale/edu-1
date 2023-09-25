@@ -1,13 +1,13 @@
 import { useState, useEffect, useRef } from "react";
 
-import MatomoLogo from "../assets/Matomo_Logo.png";
+import AckeeLogo from "../assets/Ackee_Logo.png";
 
-function Matomo() {
+function Ackee() {
     const [iframeHeight, setIframeHeight] = useState("500px");
     const iframeRef = useRef<HTMLIFrameElement | null>(null);
 
     const openLinkOffSite = () => {
-        const awesomeLink = "https://matomo.org/";
+        const awesomeLink = "https://ackee.electerious.com/";
         window.open(awesomeLink, "_blank");
     };
 
@@ -56,8 +56,8 @@ function Matomo() {
                     >
                         <img
                             onClick={openLinkOffSite}
-                            src={MatomoLogo}
-                            alt="Matomo Logo"
+                            src={AckeeLogo}
+                            alt="Ackee Logo"
                             className="logos"
                         />
                     </div>
@@ -341,4 +341,4 @@ function Matomo() {
         </>
     );
 }
-export default Matomo;
+export default Ackee;

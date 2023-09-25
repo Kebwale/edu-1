@@ -97,6 +97,7 @@ function Navbar() {
                             alignItems: "center",
                             justifyContent: "center",
                             fontSize: "1.2rem",
+                            margin: "15px 0",
                         }}
                     >
                         awesome
@@ -105,6 +106,26 @@ function Navbar() {
                     <NavbarLink
                         name="Matomo"
                         route="/edu-1/matomo"
+                        setIsVisible={setIsVisible}
+                    />
+                    <NavbarLink
+                        name="Plausible analytics"
+                        route="/edu-1/plausible"
+                        setIsVisible={setIsVisible}
+                    />
+                    <NavbarLink
+                        name="Fathom analytics"
+                        route="/edu-1/fathom"
+                        setIsVisible={setIsVisible}
+                    />
+                    <NavbarLink
+                        name="GoAccess"
+                        route="/edu-1/go_access"
+                        setIsVisible={setIsVisible}
+                    />
+                    <NavbarLink
+                        name="Ackee"
+                        route="/edu-1/ackee"
                         setIsVisible={setIsVisible}
                     />
                 </ul>

@@ -6,6 +6,10 @@ import Footer from "./components/Footer.tsx";
 
 import MainPage from "./components/MainPage.tsx";
 import Matomo from "./components/Matomo.tsx";
+import PlausibleAnalytics from "./components/PlausibleAnalytics.tsx";
+import FathomAnalytics from "./components/FathomAnalytics.tsx";
+import GoAccess from "./components/GoAccess.tsx";
+import Ackee from "./components/Ackee.tsx";
 
 import "materialize-css/dist/css/materialize.min.css";
 import "./css/style.css";
@@ -53,7 +57,19 @@ function App() {
                         <Routes>
                             <Route path="/edu-1/" element={<MainPage />} />
                             <Route path="/edu-1/matomo" element={<Matomo />} />
-                            {/* <Route path="/contact" element={<Contact />} /> */}
+                            <Route
+                                path="/edu-1/plausible"
+                                element={<PlausibleAnalytics />}
+                            />
+                            <Route
+                                path="/edu-1/fathom"
+                                element={<FathomAnalytics />}
+                            />
+                            <Route
+                                path="/edu-1/go_access"
+                                element={<GoAccess />}
+                            />
+                            <Route path="/edu-1/ackee" element={<Ackee />} />
                         </Routes>
                     </main>
                     <Footer />

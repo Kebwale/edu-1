@@ -33,6 +33,15 @@ p {
     }
 }
 
+.logos {
+    width: 300px;
+    height: auto;
+    cursor: pointer;
+
+    padding: 5px;
+    margin: 0;
+}
+
 .icon-block {
     padding: 0 15px;
 }

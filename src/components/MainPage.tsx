@@ -7,6 +7,22 @@ function MainPage() {
         navigate("/edu-1/matomo");
     };
 
+    const goToPlausable = () => {
+        navigate("/edu-1/plausible");
+    };
+
+    const goToFathom = () => {
+        navigate("/edu-1/fathom");
+    };
+
+    const goToGoAccess = () => {
+        navigate("/edu-1/go_access");
+    };
+
+    const goToAckee = () => {
+        navigate("/edu-1/ackee");
+    };
+
     return (
         <>
             <div id="index-banner">
@@ -63,7 +79,18 @@ function MainPage() {
                 </div>
 
                 <div className="row">
-                    <h5 className="center">Plausible Analytics</h5>
+                    <h5 className="center">
+                        <div
+                            onClick={goToPlausable}
+                            className="red-text"
+                            style={{
+                                cursor: "pointer",
+                                fontSize: "30px",
+                            }}
+                        >
+                            Plausible Analytics
+                        </div>
+                    </h5>
 
                     <p className="text-p center">
                         Легковесное решение для веб-аналитики с открытым
@@ -76,7 +103,18 @@ function MainPage() {
                 </div>
 
                 <div className="row">
-                    <h5 className="center">Fathom Analytics</h5>
+                    <h5 className="center">
+                        <div
+                            onClick={goToFathom}
+                            className="red-text"
+                            style={{
+                                cursor: "pointer",
+                                fontSize: "30px",
+                            }}
+                        >
+                            Fathom Analytics
+                        </div>
+                    </h5>
 
                     <p className="text-p center">
                         Современное решение для веб-аналитики, которое не
@@ -90,7 +128,18 @@ function MainPage() {
                 </div>
 
                 <div className="row">
-                    <h5 className="center">GoAccess</h5>
+                    <h5 className="center">
+                        <div
+                            onClick={goToGoAccess}
+                            className="red-text"
+                            style={{
+                                cursor: "pointer",
+                                fontSize: "30px",
+                            }}
+                        >
+                            GoAccess
+                        </div>
+                    </h5>
 
                     <p className="text-p center">
                         Утилита анализа логов в реальном времени с интерфейсом
@@ -103,7 +152,18 @@ function MainPage() {
                 </div>
 
                 <div className="row">
-                    <h5 className="center">Ackee</h5>
+                    <h5 className="center">
+                        <div
+                            onClick={goToAckee}
+                            className="red-text"
+                            style={{
+                                cursor: "pointer",
+                                fontSize: "30px",
+                            }}
+                        >
+                            Ackee
+                        </div>
+                    </h5>
 
                     <p className="text-p center">
                         Инструмент веб-аналитики с акцентом на приватность и
