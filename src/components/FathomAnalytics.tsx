@@ -19,18 +19,28 @@ function FathomAnalytics() {
         }
     };
 
-    const goToHeatMaps = () => {
-        const awesomeLink = "https://matomo.org/guide/reports/heatmaps/";
+    const goToWordPress = () => {
+        const awesomeLink = "https://wordpress.com/";
         window.open(awesomeLink, "_blank");
     };
 
-    const goToFunnels = () => {
-        const awesomeLink = "https://matomo.org/guide/reports/Funnels/";
+    const goToNext = () => {
+        const awesomeLink = "https://nextjs.org/";
         window.open(awesomeLink, "_blank");
     };
 
-    const goToWebVitals = () => {
-        const awesomeLink = "https://matomo.org/guide/reports/seo-web-vitals/";
+    const goToGatsby = () => {
+        const awesomeLink = "https://www.gatsbyjs.com/";
+        window.open(awesomeLink, "_blank");
+    };
+
+    const goToWebHugo = () => {
+        const awesomeLink = "https://gohugo.io/";
+        window.open(awesomeLink, "_blank");
+    };
+
+    const goToWebJekyll = () => {
+        const awesomeLink = "https://jekyllrb.com/";
         window.open(awesomeLink, "_blank");
     };
 
@@ -67,15 +77,15 @@ function FathomAnalytics() {
                             <div className="col s12 center">
                                 <h4 className="header center gray-text txt my-header3"></h4>
                                 <p className="center text-p">
-                                    Matomo, изначально известный как Piwik,
-                                    является ведущим программным обеспечением
-                                    для веб-аналитики с открытым исходным кодом.
-                                    Он предоставляет детальную информацию о
-                                    посещениях вашего сайта, такую как
-                                    посещенные страницы, время на сайте,
-                                    используемые устройства и многое другое.
-                                    Главное преимущество Matomo заключается в
-                                    том, что вы контролируете свои данные.
+                                    Fathom Analytics — это современный
+                                    инструмент веб-аналитики, который
+                                    предоставляет сведения о трафике на сайте,
+                                    при этом сохраняя конфиденциальность
+                                    посетителей. По аналогии с Plausible
+                                    Analytics, Fathom предлагает альтернативу
+                                    таким сервисам, как Google Analytics, не
+                                    используя куки и не собирая личные данные
+                                    пользователей.
                                 </p>
                             </div>
                         </div>
@@ -85,7 +95,7 @@ function FathomAnalytics() {
                         ref={iframeRef}
                         height={iframeHeight}
                         width="100%"
-                        src="https://www.youtube.com/embed/UK_VdcY480E"
+                        src="https://www.youtube.com/embed/K5lO7AMURA4?si=ib-DRqyidv_YZWOM"
                         allowFullScreen
                         style={{
                             maxHeight: "750px",
@@ -102,36 +112,28 @@ function FathomAnalytics() {
                     <h5 className="center">1. Приватность</h5>
 
                     <p className="text-p center">
-                        Matomo уделяет особое внимание приватности данных. У вас
-                        есть полный контроль над вашими данными, и они никогда
-                        не передаются третьим сторонам.
+                        Fathom собирает анонимные данные, не требует
+                        использования кукис и соответствует требованиям GDPR,
+                        CCPA и других законов о защите данных.
                     </p>
                 </div>
 
                 <div className="row">
-                    <h5 className="center">2. Гибкость</h5>
+                    <h5 className="center">2. Простота и Удобство</h5>
 
                     <p className="text-p center">
-                        Matomo можно настраивать в соответствии с конкретными
-                        потребностями вашего бизнеса.
+                        Платформа предлагает чистый и интуитивный интерфейс, что
+                        делает ее простой в использовании даже для начинающих.
                     </p>
                 </div>
 
                 <div className="row">
-                    <h5 className="center">3. Расширяемость</h5>
+                    <h5 className="center">3. Легковесный</h5>
 
                     <p className="text-p center">
-                        Благодаря системе плагинов Matomo может быть дополнен
-                        дополнительными функциями.
-                    </p>
-                </div>
-
-                <div className="row">
-                    <h5 className="center">4. Мобильный доступ</h5>
-
-                    <p className="text-p center">
-                        Matomo предоставляет приложения для iOS и Android для
-                        мониторинга ваших данных на ходу.
+                        Скрипт отслеживания компактен и быстро загружается, что
+                        положительно сказывается на производительности вашего
+                        сайта.
                     </p>
                 </div>
             </div>
@@ -144,7 +146,7 @@ function FathomAnalytics() {
                     ref={iframeRef}
                     height={iframeHeight}
                     width="100%"
-                    src="https://www.youtube.com/embed/Ffq-gAvlwE0?si=MJPsareG7vhUIB1q"
+                    src="https://www.youtube.com/embed/w50IrwhzCEM?si=0Jz6r8nSUlwhZM0M"
                     allowFullScreen
                     style={{
                         maxHeight: "750px",
@@ -155,7 +157,8 @@ function FathomAnalytics() {
                     <h5 className="center">Установка</h5>
 
                     <p className="text-p center">
-                        Скачайте последнюю версию с{" "}
+                        Добавьте скрипт отслеживания Fathom на ваш веб-сайт,
+                        следуя инструкциям на{" "}
                         <b
                             className="blue-text"
                             onClick={openLinkOffSite}
@@ -163,151 +166,112 @@ function FathomAnalytics() {
                                 cursor: "pointer",
                             }}
                         >
-                            официального сайта
-                        </b>{" "}
-                        и следуйте инструкциям по установке на вашем сервере.
+                            официальном сайте
+                        </b>
+                        .
                     </p>
                 </div>
                 <div className="row">
-                    <h5 className="center">Интеграция с сайтом</h5>
+                    <h5 className="center">Аналитика</h5>
 
                     <p className="text-p center">
-                        После установки вам будет предоставлен код для вставки
-                        на ваш сайт. Этот код необходимо добавить на каждую
-                        страницу вашего сайта.
-                    </p>
-                </div>
-                <div className="row">
-                    <h5 className="center">Анализ данных</h5>
-
-                    <p className="text-p center">
-                        После интеграции кода начните анализировать трафик на
-                        вашем сайте, используя интуитивно понятный интерфейс
-                        Matomo.
+                        Войдите в свой аккаунт Fathom для просмотра
+                        аналитических данных и настройки параметров
+                        отслеживания.
                     </p>
                 </div>
             </div>
 
             <div className="section">
                 <h4 className="header center gray-text txt my-header3">
-                    Расширение функционала с помощью плагинов
+                    Плагины
                 </h4>
                 <p className="text-p center">
-                    Matomo имеет богатую экосистему плагинов, позволяющую
-                    добавить различные функции, такие как:
+                    Fathom Analytics предоставляет интеграцию с различными
+                    платформами и CMS через плагины или интеграцию с API. Вот
+                    несколько примеров:
                 </p>
                 <div className="row">
                     <h5 className="center">
                         <div
-                            onClick={goToHeatMaps}
+                            onClick={goToWordPress}
                             className="blue-text"
                             style={{
                                 cursor: "pointer",
                                 fontSize: "30px",
                             }}
                         >
-                            Heatmaps
+                            WordPress
                         </div>
                     </h5>
 
                     <p className="text-p center">
-                        Heatmaps позволяет регистрировать щелчки, движения мыши
-                        и прокрутку страниц посетителями вашего сайта. Heatmaps
-                        позволяет определить, где, по мнению пользователей,
-                        что-то можно нажать, но это не так, есть ли части
-                        страницы, которые редко просматриваются или с которыми
-                        редко взаимодействуют, что на самом деле ищут ваши
-                        посетители, какая часть страницы видна, когда
-                        пользователи просматривают вашу страницу, и многое
-                        другое. Тепловые карты позволяют оптимизировать работу
-                        сайта и добиться максимального успеха.
+                        Для WordPress доступен официальный плагин Fathom
+                        Analytics, который можно легко установить и настроить,
+                        чтобы начать отслеживание статистики вашего сайта.
                     </p>
                 </div>
 
                 <div className="row">
-                    <h5 className="center">
-                        <div
-                            onClick={goToFunnels}
+                    <h5 className="center">Jamstack Frameworks</h5>
+
+                    <p className="text-p center">
+                        Fathom также можно интегрировать с фреймворками
+                        Jamstack, такими как{" "}
+                        <p
+                            onClick={goToGatsby}
+                            className="orange-text"
+                            style={{
+                                cursor: "pointer",
+                                display: "inline",
+                            }}
+                        >
+                            Gatsby
+                        </p>{" "}
+                        и{" "}
+                        <p
+                            onClick={goToNext}
                             className="blue-text"
                             style={{
                                 cursor: "pointer",
-                                fontSize: "30px",
+                                display: "inline",
                             }}
                         >
-                            Funnels
-                        </div>
-                    </h5>
-
-                    <p className="text-p center">
-                        Определяет ряд действий, которые должны совершить
-                        посетители на пути к достижению цели. Установив
-                        расширение, вы сможете повысить коэффициент конверсии,
-                        продажи и доходы, так как сможете определить, где вы
-                        теряете посетителей на пути к достижению цели..
+                            Next.js
+                        </p>
+                        , используя соответствующие плагины или модули.
                     </p>
                 </div>
 
                 <div className="row">
-                    <h5 className="center">
-                        <div
-                            onClick={goToWebVitals}
+                    <h5 className="center">Сайты на статическом генераторе</h5>
+
+                    <p className="text-p center">
+                        Если вы используете статический генератор сайтов, такой
+                        как{" "}
+                        <p
+                            onClick={goToWebHugo}
+                            className="orange-text"
+                            style={{
+                                cursor: "pointer",
+                                display: "inline",
+                            }}
+                        >
+                            Hugo
+                        </p>{" "}
+                        или{" "}
+                        <p
+                            onClick={goToWebJekyll}
                             className="blue-text"
                             style={{
                                 cursor: "pointer",
-                                fontSize: "30px",
+                                display: "inline",
                             }}
                         >
-                            SEO Web Vitals
-                        </div>
-                    </h5>
-
-                    <p className="text-p center">
-                        Matomo позволяет отслеживать метрики для SEO Web
-                        Vitals.Это такие показатели, как скорость страницы и
-                        загрузка вашего сайта, которые могут помочь в поисковой
-                        оптимизации. Поисковые системы не хотят направлять людей
-                        на страницы, которые выглядят нестабильными и долго
-                        загружаются, поскольку это отражается на их репутации.
-                        Поэтому поисковые системы, такие как Google, все чаще
-                        используют эти основные показатели для ранжирования
-                        сайтов и обеспечения отличного восприятия страниц
-                        пользователями, переходящими по ссылкам из их
-                        результатов. Обратите внимание, что функция SEO Web
-                        Vitals предназначена исключительно для Matomo On-Premise
-                        и в настоящее время недоступна в Matomo Cloud.
-                    </p>
-                </div>
-            </div>
-
-            <div className="section">
-                <h4 className="header center gray-text txt my-header3">
-                    Почему выбирают Matomo?
-                </h4>
-                <div className="row">
-                    <h5 className="center">Контроль над данными</h5>
-
-                    <p className="text-p center">
-                        В отличие от других платформ веб-аналитики, Matomo
-                        позволяет вам хранить данные на вашем собственном
-                        сервере.
-                    </p>
-                </div>
-
-                <div className="row">
-                    <h5 className="center">Полная прозрачность</h5>
-
-                    <p className="text-p center">
-                        Код Matomo открыт, что означает возможность проверки и
-                        модификации его функционала.
-                    </p>
-                </div>
-
-                <div className="row">
-                    <h5 className="center">Соблюдение законов о приватности</h5>
-
-                    <p className="text-p center">
-                        Matomo упрощает процесс соблюдения законов о
-                        приватности, таких как GDPR.
+                            Jekyll
+                        </p>
+                        , вы также можете интегрировать Fathom, добавив скрипт
+                        отслеживания в шаблоны своего сайта.
                     </p>
                 </div>
             </div>
@@ -316,29 +280,28 @@ function FathomAnalytics() {
                 <h4 className="header center gray-text txt my-header3">
                     Недостатки
                 </h4>
-                <p className="text-p center">
-                    Как и у любого другого инструмента, у Matomo есть свои
-                    недостатки:
-                </p>
+
                 <div className="row">
-                    <h5 className="center">Требования к ресурсам</h5>
+                    <h5 className="center">Ограниченные функции</h5>
 
                     <p className="text-p center">
-                        Matomo может требовать дополнительных ресурсов сервера
-                        при высокой загрузке.
+                        Возможности Fathom могут быть менее обширными по
+                        сравнению с более развитыми платформами аналитики.
                     </p>
                 </div>
 
                 <div className="row">
-                    <h5 className="center">Сложный в настройке</h5>
+                    <h5 className="center">Цена</h5>
 
                     <p className="text-p center">
-                        Начальная настройка и кастомизация могут потребовать
-                        времени и знаний.
+                        Fathom является платной платформой, что может быть
+                        барьером для мелких предприятий или индивидуальных
+                        веб-сайтов.
                     </p>
                 </div>
             </div>
         </>
     );
 }
+
 export default FathomAnalytics;

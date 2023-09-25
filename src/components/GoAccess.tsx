@@ -19,21 +19,6 @@ function GoAccess() {
         }
     };
 
-    const goToHeatMaps = () => {
-        const awesomeLink = "https://matomo.org/guide/reports/heatmaps/";
-        window.open(awesomeLink, "_blank");
-    };
-
-    const goToFunnels = () => {
-        const awesomeLink = "https://matomo.org/guide/reports/Funnels/";
-        window.open(awesomeLink, "_blank");
-    };
-
-    const goToWebVitals = () => {
-        const awesomeLink = "https://matomo.org/guide/reports/seo-web-vitals/";
-        window.open(awesomeLink, "_blank");
-    };
-
     useEffect(() => {
         adjustHeight();
 
@@ -67,15 +52,13 @@ function GoAccess() {
                             <div className="col s12 center">
                                 <h4 className="header center gray-text txt my-header3"></h4>
                                 <p className="center text-p">
-                                    Matomo, изначально известный как Piwik,
-                                    является ведущим программным обеспечением
-                                    для веб-аналитики с открытым исходным кодом.
-                                    Он предоставляет детальную информацию о
-                                    посещениях вашего сайта, такую как
-                                    посещенные страницы, время на сайте,
-                                    используемые устройства и многое другое.
-                                    Главное преимущество Matomo заключается в
-                                    том, что вы контролируете свои данные.
+                                    GoAccess — это гибкий и визуальный
+                                    инструмент для анализа лог-файлов
+                                    веб-сервера в реальном времени. Он позволяет
+                                    быстро анализировать и просматривать
+                                    статистику веб-сайта на основе данных,
+                                    записанных сервером, и предоставляет краткие
+                                    и читаемые отчеты в различных форматах.
                                 </p>
                             </div>
                         </div>
@@ -85,7 +68,7 @@ function GoAccess() {
                         ref={iframeRef}
                         height={iframeHeight}
                         width="100%"
-                        src="https://www.youtube.com/embed/UK_VdcY480E"
+                        src="https://www.youtube.com/embed/X0GSJVLAakU?si=AWdb9uOaWXsUpNm1"
                         allowFullScreen
                         style={{
                             maxHeight: "750px",
@@ -99,39 +82,41 @@ function GoAccess() {
                     Основные характеристики:
                 </h4>
                 <div className="row">
-                    <h5 className="center">1. Приватность</h5>
+                    <h5 className="center">1. Анализ в Реальном Времени</h5>
 
                     <p className="text-p center">
-                        Matomo уделяет особое внимание приватности данных. У вас
-                        есть полный контроль над вашими данными, и они никогда
-                        не передаются третьим сторонам.
+                        GoAccess предоставляет данные в реальном времени,
+                        позволяя владельцам сайтов быстро отслеживать активность
+                        и использование ресурса.
                     </p>
                 </div>
 
                 <div className="row">
-                    <h5 className="center">2. Гибкость</h5>
+                    <h5 className="center">2. Простота Использования</h5>
 
                     <p className="text-p center">
-                        Matomo можно настраивать в соответствии с конкретными
-                        потребностями вашего бизнеса.
+                        Это легковесное и простое в использовании программное
+                        обеспечение с возможностью работы прямо из командной
+                        строки.
                     </p>
                 </div>
 
                 <div className="row">
-                    <h5 className="center">3. Расширяемость</h5>
+                    <h5 className="center">3. Визуализация Данных</h5>
 
                     <p className="text-p center">
-                        Благодаря системе плагинов Matomo может быть дополнен
-                        дополнительными функциями.
+                        Генерация визуальных отчетов, доступных в различных
+                        форматах, включая HTML, JSON и CSV.
                     </p>
                 </div>
 
                 <div className="row">
-                    <h5 className="center">4. Мобильный доступ</h5>
+                    <h5 className="center">4. Без кукисов и JavaScript</h5>
 
                     <p className="text-p center">
-                        Matomo предоставляет приложения для iOS и Android для
-                        мониторинга ваших данных на ходу.
+                        GoAccess анализирует логи сервера напрямую, и ему не
+                        требуется внедрение JavaScript на ваш сайт или
+                        использование куки.
                     </p>
                 </div>
             </div>
@@ -144,7 +129,7 @@ function GoAccess() {
                     ref={iframeRef}
                     height={iframeHeight}
                     width="100%"
-                    src="https://www.youtube.com/embed/Ffq-gAvlwE0?si=MJPsareG7vhUIB1q"
+                    src="https://www.youtube.com/embed/fHhBDY7EgZY?si=8Ua0_NmjLxCFGd_9"
                     allowFullScreen
                     style={{
                         maxHeight: "750px",
@@ -155,7 +140,7 @@ function GoAccess() {
                     <h5 className="center">Установка</h5>
 
                     <p className="text-p center">
-                        Скачайте последнюю версию с{" "}
+                        Установите GoAccess на ваш сервер, следуя инструкциям на{" "}
                         <b
                             className="blue-text"
                             onClick={openLinkOffSite}
@@ -163,182 +148,80 @@ function GoAccess() {
                                 cursor: "pointer",
                             }}
                         >
-                            официального сайта
+                            официальном сайте
                         </b>{" "}
-                        и следуйте инструкциям по установке на вашем сервере.
+                        .
                     </p>
                 </div>
                 <div className="row">
-                    <h5 className="center">Интеграция с сайтом</h5>
+                    <h5 className="center">Конфигурация</h5>
 
                     <p className="text-p center">
-                        После установки вам будет предоставлен код для вставки
-                        на ваш сайт. Этот код необходимо добавить на каждую
-                        страницу вашего сайта.
+                        Настройте GoAccess для анализа лог-файлов вашего
+                        веб-сервера (Apache, Nginx и другие).
                     </p>
                 </div>
                 <div className="row">
                     <h5 className="center">Анализ данных</h5>
 
                     <p className="text-p center">
-                        После интеграции кода начните анализировать трафик на
-                        вашем сайте, используя интуитивно понятный интерфейс
-                        Matomo.
+                        Запустите GoAccess для анализа лог-файлов и генерации
+                        отчетов.
                     </p>
                 </div>
             </div>
 
             <div className="section">
                 <h4 className="header center gray-text txt my-header3">
-                    Расширение функционала с помощью плагинов
+                    Плагины
                 </h4>
                 <p className="text-p center">
-                    Matomo имеет богатую экосистему плагинов, позволяющую
-                    добавить различные функции, такие как:
+                    GoAccess, как правило, не использует плагины в том смысле, в
+                    каком они применяются в других программных продуктах, таких
+                    как веб-браузеры или CMS. Это автономное программное
+                    обеспечение, которое анализирует лог-файлы веб-сервера, и
+                    оно не предназначено для расширения с помощью сторонних
+                    плагинов.
                 </p>
-                <div className="row">
-                    <h5 className="center">
-                        <div
-                            onClick={goToHeatMaps}
-                            className="blue-text"
-                            style={{
-                                cursor: "pointer",
-                                fontSize: "30px",
-                            }}
-                        >
-                            Heatmaps
-                        </div>
-                    </h5>
-
-                    <p className="text-p center">
-                        Heatmaps позволяет регистрировать щелчки, движения мыши
-                        и прокрутку страниц посетителями вашего сайта. Heatmaps
-                        позволяет определить, где, по мнению пользователей,
-                        что-то можно нажать, но это не так, есть ли части
-                        страницы, которые редко просматриваются или с которыми
-                        редко взаимодействуют, что на самом деле ищут ваши
-                        посетители, какая часть страницы видна, когда
-                        пользователи просматривают вашу страницу, и многое
-                        другое. Тепловые карты позволяют оптимизировать работу
-                        сайта и добиться максимального успеха.
-                    </p>
-                </div>
-
-                <div className="row">
-                    <h5 className="center">
-                        <div
-                            onClick={goToFunnels}
-                            className="blue-text"
-                            style={{
-                                cursor: "pointer",
-                                fontSize: "30px",
-                            }}
-                        >
-                            Funnels
-                        </div>
-                    </h5>
-
-                    <p className="text-p center">
-                        Определяет ряд действий, которые должны совершить
-                        посетители на пути к достижению цели. Установив
-                        расширение, вы сможете повысить коэффициент конверсии,
-                        продажи и доходы, так как сможете определить, где вы
-                        теряете посетителей на пути к достижению цели..
-                    </p>
-                </div>
-
-                <div className="row">
-                    <h5 className="center">
-                        <div
-                            onClick={goToWebVitals}
-                            className="blue-text"
-                            style={{
-                                cursor: "pointer",
-                                fontSize: "30px",
-                            }}
-                        >
-                            SEO Web Vitals
-                        </div>
-                    </h5>
-
-                    <p className="text-p center">
-                        Matomo позволяет отслеживать метрики для SEO Web
-                        Vitals.Это такие показатели, как скорость страницы и
-                        загрузка вашего сайта, которые могут помочь в поисковой
-                        оптимизации. Поисковые системы не хотят направлять людей
-                        на страницы, которые выглядят нестабильными и долго
-                        загружаются, поскольку это отражается на их репутации.
-                        Поэтому поисковые системы, такие как Google, все чаще
-                        используют эти основные показатели для ранжирования
-                        сайтов и обеспечения отличного восприятия страниц
-                        пользователями, переходящими по ссылкам из их
-                        результатов. Обратите внимание, что функция SEO Web
-                        Vitals предназначена исключительно для Matomo On-Premise
-                        и в настоящее время недоступна в Matomo Cloud.
-                    </p>
-                </div>
-            </div>
-
-            <div className="section">
-                <h4 className="header center gray-text txt my-header3">
-                    Почему выбирают Matomo?
-                </h4>
-                <div className="row">
-                    <h5 className="center">Контроль над данными</h5>
-
-                    <p className="text-p center">
-                        В отличие от других платформ веб-аналитики, Matomo
-                        позволяет вам хранить данные на вашем собственном
-                        сервере.
-                    </p>
-                </div>
-
-                <div className="row">
-                    <h5 className="center">Полная прозрачность</h5>
-
-                    <p className="text-p center">
-                        Код Matomo открыт, что означает возможность проверки и
-                        модификации его функционала.
-                    </p>
-                </div>
-
-                <div className="row">
-                    <h5 className="center">Соблюдение законов о приватности</h5>
-
-                    <p className="text-p center">
-                        Matomo упрощает процесс соблюдения законов о
-                        приватности, таких как GDPR.
-                    </p>
-                </div>
             </div>
 
             <div className="section">
                 <h4 className="header center gray-text txt my-header3">
                     Недостатки
                 </h4>
-                <p className="text-p center">
-                    Как и у любого другого инструмента, у Matomo есть свои
-                    недостатки:
-                </p>
                 <div className="row">
-                    <h5 className="center">Требования к ресурсам</h5>
+                    <h5 className="center">Ограниченная Глубина Аналитики</h5>
 
                     <p className="text-p center">
-                        Matomo может требовать дополнительных ресурсов сервера
-                        при высокой загрузке.
+                        GoAccess может предоставлять менее подробную аналитику
+                        по сравнению с другими решениями, так как он анализирует
+                        только лог-файлы сервера.
                     </p>
                 </div>
 
                 <div className="row">
-                    <h5 className="center">Сложный в настройке</h5>
+                    <h5 className="center">
+                        Отсутствие Графического Интерфейса
+                    </h5>
 
                     <p className="text-p center">
-                        Начальная настройка и кастомизация могут потребовать
-                        времени и знаний.
+                        Хотя GoAccess может генерировать графические отчеты, сам
+                        он работает из командной строки, что может быть неудобно
+                        для некоторых пользователей.
+                    </p>
+                </div>
+
+                <div className="row">
+                    <h5 className="center">О Не Подходит для Всех Серверов</h5>
+
+                    <p className="text-p center">
+                        Не все серверы логируют нужную для анализа информацию по
+                        умолчанию.
                     </p>
                 </div>
             </div>
         </>
     );
 }
+
 export default GoAccess;

@@ -87,7 +87,7 @@ function App() {
                         }}
                         onClick={scrollToTop}
                     >
-                        Вернуться наверх
+                        Back to top
                     </div>
                 )}
             </div>

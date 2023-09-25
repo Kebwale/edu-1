@@ -19,18 +19,18 @@ function PlausibleAnalytics() {
         }
     };
 
-    const goToHeatMaps = () => {
-        const awesomeLink = "https://matomo.org/guide/reports/heatmaps/";
+    const goToWordPress = () => {
+        const awesomeLink = "https://wordpress.com/";
         window.open(awesomeLink, "_blank");
     };
 
-    const goToFunnels = () => {
-        const awesomeLink = "https://matomo.org/guide/reports/Funnels/";
+    const goToNext = () => {
+        const awesomeLink = "https://nextjs.org/";
         window.open(awesomeLink, "_blank");
     };
 
-    const goToWebVitals = () => {
-        const awesomeLink = "https://matomo.org/guide/reports/seo-web-vitals/";
+    const goToNuxt = () => {
+        const awesomeLink = "https://nuxt.com/";
         window.open(awesomeLink, "_blank");
     };
 
@@ -67,15 +67,15 @@ function PlausibleAnalytics() {
                             <div className="col s12 center">
                                 <h4 className="header center gray-text txt my-header3"></h4>
                                 <p className="center text-p">
-                                    Matomo, изначально известный как Piwik,
-                                    является ведущим программным обеспечением
-                                    для веб-аналитики с открытым исходным кодом.
-                                    Он предоставляет детальную информацию о
-                                    посещениях вашего сайта, такую как
-                                    посещенные страницы, время на сайте,
-                                    используемые устройства и многое другое.
-                                    Главное преимущество Matomo заключается в
-                                    том, что вы контролируете свои данные.
+                                    Plausible Analytics — это веб-аналитический
+                                    сервис, предоставляющий подробную информацию
+                                    о трафике на веб-сайте без использования
+                                    кукис (cookies) и соблюдения приватности
+                                    пользователей. Платформа была разработана с
+                                    целью обеспечения прозрачности и защиты
+                                    конфиденциальности данных, в отличие от
+                                    других платформ аналитики веб-сайтов, таких
+                                    как Google Analytics.
                                 </p>
                             </div>
                         </div>
@@ -85,7 +85,7 @@ function PlausibleAnalytics() {
                         ref={iframeRef}
                         height={iframeHeight}
                         width="100%"
-                        src="https://www.youtube.com/embed/UK_VdcY480E"
+                        src="https://www.youtube.com/embed/aFG7St-YnCY?si=9baPCkg9QKynBZm5"
                         allowFullScreen
                         style={{
                             maxHeight: "750px",
@@ -102,36 +102,51 @@ function PlausibleAnalytics() {
                     <h5 className="center">1. Приватность</h5>
 
                     <p className="text-p center">
-                        Matomo уделяет особое внимание приватности данных. У вас
-                        есть полный контроль над вашими данными, и они никогда
-                        не передаются третьим сторонам.
+                        <ul>
+                            <li>
+                                Plausible не использует куки, поэтому вам не
+                                нужно получать согласие посетителей на
+                                использование кукис на вашем сайте.
+                            </li>
+                            <li>
+                                Plausible совместим с GDPR, CCPA и другими
+                                законами о защите данных.
+                            </li>
+                        </ul>
                     </p>
                 </div>
 
                 <div className="row">
-                    <h5 className="center">2. Гибкость</h5>
+                    <h5 className="center">2. Легковесность</h5>
 
                     <p className="text-p center">
-                        Matomo можно настраивать в соответствии с конкретными
-                        потребностями вашего бизнеса.
+                        <ul>
+                            <li>
+                                Скрипт отслеживания очень маленький и быстро
+                                загружается, минимизируя влияние на
+                                производительность вашего сайта.
+                            </li>
+                        </ul>
                     </p>
                 </div>
 
                 <div className="row">
-                    <h5 className="center">3. Расширяемость</h5>
+                    <h5 className="center">3. Простота использования</h5>
 
                     <p className="text-p center">
-                        Благодаря системе плагинов Matomo может быть дополнен
-                        дополнительными функциями.
+                        Интерфейс пользователя является чистым и интуитивно
+                        понятным, делая аналитику доступной даже для не
+                        технически подкованных пользователей.
                     </p>
                 </div>
 
                 <div className="row">
-                    <h5 className="center">4. Мобильный доступ</h5>
+                    <h5 className="center">4. Открытый исходный код</h5>
 
                     <p className="text-p center">
-                        Matomo предоставляет приложения для iOS и Android для
-                        мониторинга ваших данных на ходу.
+                        Plausible является программой с открытым исходным кодом,
+                        что позволяет сообществу вносить свой вклад в развитие
+                        продукта.
                     </p>
                 </div>
             </div>
@@ -144,7 +159,7 @@ function PlausibleAnalytics() {
                     ref={iframeRef}
                     height={iframeHeight}
                     width="100%"
-                    src="https://www.youtube.com/embed/Ffq-gAvlwE0?si=MJPsareG7vhUIB1q"
+                    src="https://www.youtube.com/embed/nImTI8u5JLk?si=dAz5D2KV7uUoUvWw"
                     allowFullScreen
                     style={{
                         maxHeight: "750px",
@@ -152,10 +167,10 @@ function PlausibleAnalytics() {
                 />
 
                 <div className="row">
-                    <h5 className="center">Установка</h5>
+                    <h5 className="center">Получение доступа</h5>
 
                     <p className="text-p center">
-                        Скачайте последнюю версию с{" "}
+                        Зарегистрируйтесь на{" "}
                         <b
                             className="blue-text"
                             onClick={openLinkOffSite}
@@ -163,151 +178,91 @@ function PlausibleAnalytics() {
                                 cursor: "pointer",
                             }}
                         >
-                            официального сайта
+                            сайте
                         </b>{" "}
-                        и следуйте инструкциям по установке на вашем сервере.
+                        Plausible.
                     </p>
                 </div>
                 <div className="row">
                     <h5 className="center">Интеграция с сайтом</h5>
 
                     <p className="text-p center">
-                        После установки вам будет предоставлен код для вставки
-                        на ваш сайт. Этот код необходимо добавить на каждую
-                        страницу вашего сайта.
+                        Добавьте скрипт отслеживания на ваш веб-сайт.
                     </p>
                 </div>
                 <div className="row">
-                    <h5 className="center">Анализ данных</h5>
+                    <h5 className="center">Настройка</h5>
 
                     <p className="text-p center">
-                        После интеграции кода начните анализировать трафик на
-                        вашем сайте, используя интуитивно понятный интерфейс
-                        Matomo.
+                        Настройте цели и параметры отслеживания в соответствии с
+                        вашими потребностями.
                     </p>
                 </div>
             </div>
 
             <div className="section">
                 <h4 className="header center gray-text txt my-header3">
-                    Расширение функционала с помощью плагинов
+                    Плагины
                 </h4>
                 <p className="text-p center">
-                    Matomo имеет богатую экосистему плагинов, позволяющую
-                    добавить различные функции, такие как:
+                    Plausible является частью плагинов для популярных
+                    фреймворков для облегчения интеграции с ним:
                 </p>
                 <div className="row">
                     <h5 className="center">
                         <div
-                            onClick={goToHeatMaps}
+                            onClick={goToWordPress}
                             className="blue-text"
                             style={{
                                 cursor: "pointer",
                                 fontSize: "30px",
                             }}
                         >
-                            Heatmaps
+                            WordPress
                         </div>
                     </h5>
 
                     <p className="text-p center">
-                        Heatmaps позволяет регистрировать щелчки, движения мыши
-                        и прокрутку страниц посетителями вашего сайта. Heatmaps
-                        позволяет определить, где, по мнению пользователей,
-                        что-то можно нажать, но это не так, есть ли части
-                        страницы, которые редко просматриваются или с которыми
-                        редко взаимодействуют, что на самом деле ищут ваши
-                        посетители, какая часть страницы видна, когда
-                        пользователи просматривают вашу страницу, и многое
-                        другое. Тепловые карты позволяют оптимизировать работу
-                        сайта и добиться максимального успеха.
+                        Для пользователей WordPress существует плагин, который
+                        облегчает интеграцию Plausible с вашим сайтом.
                     </p>
                 </div>
 
                 <div className="row">
-                    <h5 className="center">
+                    <h5
+                        className="center"
+                        style={{
+                            display: "flex",
+                            justifyContent: "center",
+                        }}
+                    >
                         <div
-                            onClick={goToFunnels}
-                            className="blue-text"
+                            onClick={goToNext}
+                            className="orange-text"
                             style={{
                                 cursor: "pointer",
                                 fontSize: "30px",
                             }}
                         >
-                            Funnels
+                            Next.js
                         </div>
-                    </h5>
-
-                    <p className="text-p center">
-                        Определяет ряд действий, которые должны совершить
-                        посетители на пути к достижению цели. Установив
-                        расширение, вы сможете повысить коэффициент конверсии,
-                        продажи и доходы, так как сможете определить, где вы
-                        теряете посетителей на пути к достижению цели..
-                    </p>
-                </div>
-
-                <div className="row">
-                    <h5 className="center">
+                        ,{" "}
                         <div
-                            onClick={goToWebVitals}
+                            onClick={goToNuxt}
                             className="blue-text"
                             style={{
                                 cursor: "pointer",
                                 fontSize: "30px",
+                                marginLeft: "10px",
                             }}
                         >
-                            SEO Web Vitals
+                            Nuxt.js
                         </div>
                     </h5>
 
                     <p className="text-p center">
-                        Matomo позволяет отслеживать метрики для SEO Web
-                        Vitals.Это такие показатели, как скорость страницы и
-                        загрузка вашего сайта, которые могут помочь в поисковой
-                        оптимизации. Поисковые системы не хотят направлять людей
-                        на страницы, которые выглядят нестабильными и долго
-                        загружаются, поскольку это отражается на их репутации.
-                        Поэтому поисковые системы, такие как Google, все чаще
-                        используют эти основные показатели для ранжирования
-                        сайтов и обеспечения отличного восприятия страниц
-                        пользователями, переходящими по ссылкам из их
-                        результатов. Обратите внимание, что функция SEO Web
-                        Vitals предназначена исключительно для Matomo On-Premise
-                        и в настоящее время недоступна в Matomo Cloud.
-                    </p>
-                </div>
-            </div>
-
-            <div className="section">
-                <h4 className="header center gray-text txt my-header3">
-                    Почему выбирают Matomo?
-                </h4>
-                <div className="row">
-                    <h5 className="center">Контроль над данными</h5>
-
-                    <p className="text-p center">
-                        В отличие от других платформ веб-аналитики, Matomo
-                        позволяет вам хранить данные на вашем собственном
-                        сервере.
-                    </p>
-                </div>
-
-                <div className="row">
-                    <h5 className="center">Полная прозрачность</h5>
-
-                    <p className="text-p center">
-                        Код Matomo открыт, что означает возможность проверки и
-                        модификации его функционала.
-                    </p>
-                </div>
-
-                <div className="row">
-                    <h5 className="center">Соблюдение законов о приватности</h5>
-
-                    <p className="text-p center">
-                        Matomo упрощает процесс соблюдения законов о
-                        приватности, таких как GDPR.
+                        Plausible также может быть интегрирован с современными
+                        фреймворками для разработки веб-приложений.
                     </p>
                 </div>
             </div>
@@ -317,28 +272,37 @@ function PlausibleAnalytics() {
                     Недостатки
                 </h4>
                 <p className="text-p center">
-                    Как и у любого другого инструмента, у Matomo есть свои
+                    Как и у любого другого инструмента, у Plausible есть свои
                     недостатки:
                 </p>
                 <div className="row">
-                    <h5 className="center">Требования к ресурсам</h5>
+                    <h5 className="center">
+                        Ограниченные функциональные возможности
+                    </h5>
 
                     <p className="text-p center">
-                        Matomo может требовать дополнительных ресурсов сервера
-                        при высокой загрузке.
+                        По сравнению с более крупными платформами аналитики,
+                        такими как Google Analytics, функциональные возможности
+                        Plausible могут быть ограничены. Например, они могут не
+                        предоставлять такого же глубокого анализа поведения
+                        пользователей или возможности сегментации.
                     </p>
                 </div>
 
                 <div className="row">
-                    <h5 className="center">Сложный в настройке</h5>
+                    <h5 className="center">
+                        Отсутствие интеграции с некоторыми платформами
+                    </h5>
 
                     <p className="text-p center">
-                        Начальная настройка и кастомизация могут потребовать
-                        времени и знаний.
+                        Возможно, Plausible не предоставляет интеграции с
+                        некоторыми платформами или инструментами, которые вы уже
+                        используете.
                     </p>
                 </div>
             </div>
         </>
     );
 }
+
 export default PlausibleAnalytics;
